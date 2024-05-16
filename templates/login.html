@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="maiavnN">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo1.png') }}" alt="Logo">
+
+        </div>
+    
+        <div>
+            <a href="{{ url_for('index') }}">Inici</a>
+            <a href="{{ url_for('quienes') }}">Qui som</a>
+            <a href="{{ url_for('que') }}">Què fem</a>
+            <a href="{{ url_for('proyectos') }}">Projectes</a>
+            <a target="_blank" href="https://www.eleconomista.es/">Noticies</a>
+            <a href="{{ url_for('registro') }}">Registre</a>            
+        </div>
+
+        <button  id="btnLogin">Login</button>
+        <button id="btnHasteSocio">Fes-te Soci</button>
+    
+       
+        
+
+    </nav>
+
+    <section class="contact-us" id="contact">
+      <div class="containerLogin">
+	      <form action="/login" method="POST" id="loginForm">
+          <div class="row justify-content-center">
+              <div class="col-lg-6 text-center">
+                  <h2 class="section-heading">Login</h2>
+              </div>
+          </div>
+  
+          <div class="row justify-content-center">
+              <div class="col-lg-6 text-center">
+                  <label for="username"><i class="fa-solid fa-user icon"></i></label>
+                  <input placeholder="Nombre de usuario (cesar)" type="text" id="username" name="username" class="input-field">
+              </div>
+          </div>
+  
+          <div class="row justify-content-center">
+              <div class="col-lg-6 text-center">
+                  <label for="password"><i class="fa-solid fa-lock icon"></i></label>
+                  <input placeholder="Contraseña (123456)" type="password" id="password" name="password" class="input-field">
+              </div>
+          </div>
+  
+          <div class="row justify-content-center">
+              <div class="col-lg-6 text-center">
+                  <div class="form-group">
+                      <button type="submit" class="btn-orange">Iniciar sesión</button>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Mostrar el mensaje de error aquí -->
+          <div class="row justify-content-center">
+              <div class="col-lg-6 text-center">
+                  {% if error %}
+                  <div class="form-group">
+                      <p class="error">{{ error }}</p>
+                  </div>
+                  {% endif %}
+              </div>
+          </div>
+	      </form>
+      </div>
+  </section>
+
+
+
+  
+
+    <script src="static/script.js"></script>
+</body>
+</html>
+
+   
+

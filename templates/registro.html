@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="maiavnN">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo1.png') }}" alt="Logo">
+
+        </div>
+    
+        <div>
+            <a href="{{ url_for('index') }}">Inici</a>
+            <a href="{{ url_for('quienes') }}">Qui som</a>
+            <a href="{{ url_for('que') }}">Què fem</a>
+            <a href="{{ url_for('proyectos') }}">Projectes</a>
+            <a target="_blank" href="https://www.eleconomista.es/">Noticies</a>
+            <a href="{{ url_for('registro') }}">Registre</a>            
+        </div>
+
+        <button  id="btnLogin">Login</button>
+        <button id="btnHasteSocio">Fes-te Soci</button>
+    
+       
+        
+
+    </nav>
+
+
+
+    <section class="contact-us" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contactos</h2>
+                    <div class="line-shape"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat harum incidunt id quas, facere amet modi quisquam, voluptate ad dolores soluta molestias rerum excepturi delectus mollitia porro, adipisci eveniet qui!</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <form action="/registro" method="POST">
+                <div class="row">
+                    <div class="col-md-6 form-line">
+                        <div class="form-group">
+                            <label for="exampleInputUsername">Nom</label>
+                            <input type="text" class="form-control" placeholder=" Introduïu Nom" id="nombre" name="nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputUsername">Cognoms</label>
+                            <input type="text" class="form-control" placeholder=" Introduïu Cognoms" id="apellidos" name="apellidos" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telephone">N° telèfon</label>
+                            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder=" Introduïu 10-digit mobile no." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correu Electrònic</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder=" Introduïu correu electrónic" required>
+                        </div>	
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for ="mensaje"> Missatge</label>
+                            <textarea  class="form-control" id="mensaje" name="mensaje" placeholder="Introduïu el vostre missatge"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Registrar-se</button>
+                    </div>        
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('registroForm').addEventListener('submit', function(event) {
+            var password = document.getElementById('password').value;
+            var confirmPassword = prompt('Confirme su contraseña:');
+            
+            if (password !== confirmPassword) {
+                alert('Las contraseñas no coinciden. Por favor, inténtelo de nuevo.');
+                event.preventDefault(); // Evitar que se envíe el formulario
+            }
+        });
+    </script>
+
+
+
+
+
+
+    <div id="footer-wrapper">
+        <div class="footerarea">
+            <div class="container footer">
+                <div class="logo">
+                    <img src="{{ url_for('static', filename='logo1.png') }}" alt="Logo">
+                </div>
+                <div class="cols-3 widget-column-1">  
+                    <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sobre nosaltres</font></font></h5>             
+                    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" class="">Africat és una ONG que promou la cooperació i intercanvi cultural entre Àfrica i Catalunya</font></font></p>
+                </div><!--end .widget-column-1-->                  
+                <div class="cols-3 widget-column-2">  
+                    <!-- Aquí puede ir el contenido del segundo widget-column si es necesario -->
+                </div><!--end .widget-column-2-->
+                <div class="cols-3 widget-column-3">  
+                    <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacte</font></font></h5>              
+                    <div class="phone-no">	 
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Telèfon: +34 638 28 49 30</font></font></p>
+                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Email: </font></font>
+                        <a href="mailto:info@africat.cat"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">infoafricat@gmail.com</font></font></a>
+                    </div>
+                </div><!--end .widget-column-3-->
+                <div class="clear"></div>
+            </div><!--end .container--> 
+        </div>
+    </div>
+
+    <script src="static/script.js"></script>
+        
+ 
+
+</body>
+</html>
+

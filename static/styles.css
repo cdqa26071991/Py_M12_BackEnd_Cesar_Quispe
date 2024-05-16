@@ -1,0 +1,395 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    align-items: center;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    justify-content: space-between;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,.7);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgba(0,0,0,.7);
+    height: 70px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+#btnHasteSocio {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+
+#btnLogin {
+    background-color: #d8830c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    right: 200px;
+}
+
+.logo img {
+    width: 100px; /* Ajustamos el ancho según nuestras necesidades */
+    height: auto;
+}
+
+#btnHasteSocio:hover {
+    background-color: #45a049;
+    cursor: pointer; /* Cambiar cursor cuando está sobre el botón */
+}
+
+#btnLogin:hover {
+    background-color: #45a049;
+    cursor: pointer; /* Cambiar cursor cuando está sobre el botón */
+}
+
+
+
+body {
+    padding: 20px;
+}
+
+.margen-superior{
+    margin-top: 40px;
+    background-color: darkgrey;
+}
+
+.amarrillo-container {
+    margin-top: 100px;
+    background-color: rgb(231, 204, 26);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+
+ /* Estilo personalizado para el contenedor azul */
+ .blue-container {
+    margin-top: 100px;
+    background-color: rgb(6, 9, 73);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.card-text {
+    color: #cd0a0a;
+    font-size: 40px; 
+}
+
+.card-text1 {
+    color: #cd0a0a;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.block_newsletter{
+    margin-top: 100px;
+}
+
+#footer-wrapper {
+    position: relative;
+    color: #ffffff;
+    background-color: #242424;
+    padding: 20px 0; 
+}
+
+
+.container.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cols-3 {
+    width: 30%; /* Ajusta el ancho de las columnas según sea necesario */
+}
+
+.widget-column-1,
+.widget-column-2,
+.widget-column-3 {
+    margin-bottom: 20px; /* Ajusta el espaciado entre las columnas según sea necesario */
+}
+
+.phone-no {
+    margin-top: 10px; /* Ajusta el espaciado según sea necesario */
+}
+
+/* Estilo para los enlaces */
+.recent-post a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo para los enlaces al pasar el ratón sobre ellos */
+.recent-post a:hover {
+    text-decoration: underline;
+}
+
+.video-container {
+    width: 50%; /* Ancho del contenedor, la mitad del ancho de la página */
+    float: left; /* Flotar a la izquierda para colocar los videos uno al lado del otro */
+    box-sizing: border-box; /* Incluir el padding y el border en el ancho total */
+    padding: 0 10px; /* Agregar un espacio entre los videos */
+}
+
+video {
+    width: 100%; /* Ancho del video al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción original */
+}
+
+/* Limpiar los flotantes después de los videos */
+.clear {
+    clear: both;
+}
+
+
+form {
+    width: 60%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    width: 100%;
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+:root{
+    --primary-font-color1: #ffffff; 
+    --primary-font-color2: #007bff;
+}
+
+.navbar-light {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgba(0,0,0,.7);
+    
+}
+
+.navbar-light .container a, .navbar-light .container-1 .collapse .navbar-nav .nav-item .nav-link{
+    color: var(--primary-font-color1);
+}
+
+.background-main{
+    height: 100vh;
+    background: linear-gradient(rgba(20,20,20, .5),rgba(20,20,20, .5)),url(../static/bg-1.jpg);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 89%, 51% 100%, 0 89%);
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 51% 100%, 0 89%);
+}
+
+.background-main, .services-class{
+    max-width: 100%;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    color:var(--primary-font-color1);
+}
+
+.background-main h1{
+    font-size: 5.5rem;
+}
+
+.background-main .main { 
+    display: table; 
+    width: 100%;
+    height: 82vh;
+    text-align: center;
+    /*
+    display: flex; 
+    width: 50%; 
+    height: 200px; 
+    margin: auto; 
+    */
+} 
+
+.background-main .main .main-title,.background-main .main p { 
+    display: table-cell;
+    vertical-align: middle;
+    /*margin: auto;  Important 
+    text-align: center;  */
+}
+
+.main-link{
+    font-size: 44px;
+    color: var(--primary-font-color1);
+}
+.main-link:hover{
+    color:var(--primary-font-color2);
+}
+
+.about-us,.services-class{
+    margin-top: 3em;
+    margin-bottom: 3em; 
+}
+
+.line-shape{
+    width: 10%;
+    height: 2px;
+    margin-left: calc(49% - 40px);
+    background-color: var(--primary-font-color2);
+    margin-top: 17px;
+    margin-bottom: 25px;
+}
+
+.services-class{
+    max-width: 100%;
+    height: 78vh;
+    background: linear-gradient(rgba(20,20,20, .5),rgba(20,20,20, .5)),url(../static/bg-2.jpg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    -webkit-clip-path: polygon(0 7%, 100% 0, 100% 96%, 0 100%);
+    clip-path: polygon(0 7%, 100% 0, 100% 96%, 0 100%);
+}
+
+.services-class .section-heading, .portfolio-title,.contact-us .section-heading{
+    font-size: 34px;
+    margin-top: 2.5em;
+}
+
+.services-class .container-1 .service-box .text-muted{
+    color: rgba(255,255,255,.7) !important
+}
+
+.contact-us{
+    max-width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(20,20,20, .5),rgba(20,20,20, .5)),url(../static/bg-3.jpg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    color: var(--primary-font-color1);
+    -webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 94%);
+    clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 94%);
+}
+
+
+footer.footer .social-link {
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4.3rem;
+    font-size: 2.5rem;
+    background-color: var(--primary-font-color2);
+    -webkit-transition: background-color .15s ease-in-out;
+    transition: background-color .15s ease-in-out;
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+}
+
+footer.footer .social-link:hover{
+    background-color: rgba(20,20,20, .5);
+}
+
+
+
+
+.custom-img {
+    width: 200%; /* Cambia el valor según lo grande que desees que sea la imagen */
+    height: auto; /* Esto permite que la altura se ajuste automáticamente */
+}
+
+/* Estilo para el botón de color naranja */
+.btn-orange {
+    background-color: #FFA500; /* Color naranja */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espacio interno */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cursor al pasar por encima */
+}
+
+/* Estilo cuando se pasa el mouse por encima del botón */
+.btn-orange:hover {
+    background-color: #FFD700; /* Color naranja más claro */
+}
+
+.containerLogin {
+    display: flex; /* Utiliza flexbox para centrar los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    height: 100vh; /* Ajusta la altura al 100% del viewport */
+}
+
+
+/* Esta esla página registrados*/
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+}
+
+.user-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-table th, .user-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.user-table tr:hover {
+    background-color: #f2f2f2;
+}

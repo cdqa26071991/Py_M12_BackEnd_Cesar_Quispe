@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Que hacemos</title>
+   
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="maiavnN">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo1.png') }}" alt="Logo">
+
+        </div>
+    
+        <div>
+            <a href="{{ url_for('index') }}">Inici</a>
+            <a href="{{ url_for('quienes') }}">Qui som</a>
+            <a href="{{ url_for('que') }}">Què fem</a>
+            <a href="{{ url_for('proyectos') }}">Projectes</a>
+            <a target="_blank" href="https://www.eleconomista.es/">Noticies</a>
+            <a href="{{ url_for('registro') }}">Registre</a>           
+        </div>
+
+        <button  id="btnLogin">Login</button>
+        <button id="btnHasteSocio">Fes-te Soci</button>
+    
+       
+        
+
+    </nav>
+
+
+
+    <div class="container margen-superior">
+
+        <!-- Contenedor de Dos Columnas -->
+        <div class="row">
+            
+            <!-- Columna de Texto -->
+            <div class="col-md-6">
+                <h2>Què fem</h2>
+                <p>
+                    Realitzacions
+
+Des de la seva creació, AFRICAT ha dut a terme a Catalunya i a l’Àfrica subsahariana diversos projectes, els més importants dels quals podrien ser classificats en quatre grups:
+<br>
+A. Operacions de cooperació al desenvolupament a l’Àfrica al sud del Sàhara;<br>
+
+B. Cicles de conferències;<br>
+
+C. Jornades de l’escriptor/a africà/africana;<br>
+
+D. Publicacions relatives a l’Àfrica al sud del Sàhara.<br>
+
+
+<br>
+Durant els cursos acadèmics 2000-2001 i 2001-2002, AFRICAT, l’Institut Camoës, el Centre d’Estudis Internacionals i Interculturals de la Universitat Autònoma de Barcelona (UAB) i la Facultat de Traducció i d’Interpretació de la mateixa Universitat van organitzar dos cicles de conferències que van tractar temes relatius a l’Àfrica al sud del Sàhara. En aquests cicles, dirigits a un públic divers (estudiants, cooperants, metges, agents socials, docents, etc.), van participar més de 200 persones com a estudiants i més de 30 ponents. Els dos cicles eren els següents:
+
+        Primer cicle: curs acadèmic 2000-2001. Títol: “Cultures entelades: el cas de l’Àfrica subsahariana”<br>
+        Segon cicle: curs acadèmic 2001-2002. Títol: “Desminoritzar les cultures: el coneixement al sud del Sàhara”<br>
+        <br>
+    SOBRE ELS MONS FEMENINS
+El 2014, del novembre al desembre, AFRICAT va dur a terme un cicle de conferències sobre es papers de les dones en l’àmbit espiritual.<br>
+
+JORNADES DE L’ESCRIPTOR/A AFRICÀ/AFRICANA 
+<br>
+Els 2017, 2018 i 2019, vam organitzar Jornades per a celebrar el Dia internacional de l’escriptor/a africà/africana (7 de novembre).
+
+                </p>
+                
+
+
+            
+
+            </div>
+          <!-- Columna de Imagen -->
+            <div class="col-md-6">
+            <img src="{{ url_for('static', filename='imagen10.jpg') }}" class="img-fluid custom-img" alt="Imagen">
+            </div>
+        
+
+
+        </div>
+    </div>
+
+
+
+
+    <div id="footer-wrapper">
+        <div class="footerarea">
+            <div class="container footer">
+                <div class="logo">
+                    <img src="{{ url_for('static', filename='logo1.png') }}" alt="Logo">
+                </div>
+                <div class="cols-3 widget-column-1">  
+                    <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sobre nosaltres</font></font></h5>             
+                    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" class="">Africat és una ONG que promou la cooperació i intercanvi cultural entre Àfrica i Catalunya</font></font></p>
+                </div><!--end .widget-column-1-->                  
+                <div class="cols-3 widget-column-2">  
+                    <!-- Aquí puede ir el contenido del segundo widget-column si es necesario -->
+                </div><!--end .widget-column-2-->
+                <div class="cols-3 widget-column-3">  
+                    <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacte</font></font></h5>              
+                    <div class="phone-no">	 
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Telèfon: +34 638 28 49 30</font></font></p>
+                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Email: </font></font>
+                        <a href="mailto:info@africat.cat"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">infoafricat@gmail.com</font></font></a>
+                    </div>
+                </div><!--end .widget-column-3-->
+                <div class="clear"></div>
+            </div><!--end .container--> 
+        </div>
+    </div>
+
+
+    <script src="static/script.js"></script>
+
+</body>
+</html>
+

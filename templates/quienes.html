@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quienes somos </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="maiavnN">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo1.png') }}" alt="Logo">
+
+        </div>
+    
+        <div>
+            <a href="{{ url_for('index') }}">Inici</a>
+            <a href="{{ url_for('quienes') }}">Qui som</a>
+            <a href="{{ url_for('que') }}">Què fem</a>
+            <a href="{{ url_for('proyectos') }}">Projectes</a>
+            <a target="_blank" href="https://www.eleconomista.es/">Noticies</a>
+            <a href="{{ url_for('registro') }}">Registre</a>            
+        </div>
+
+        <button  id="btnLogin">Login</button>
+        <button id="btnHasteSocio">Fes-te Soci</button>
+    
+       
+        
+
+    </nav>
+     
+
+
+
+    <div class="container margen-superior">
+
+        <!-- Contenedor de Dos Columnas -->
+        <div class="row">
+            
+            <!-- Columna de Texto -->
+            <div class="col-md-6">
+                <h2>Qui Som</h2>
+                <p>
+                    AFRICAT, Associació Africana i Catalana de Cooperació, és una entitat sense ànim de lucre, amb el NIF G62803119. Va ser creada el 2000 per un grup d’una vintena de persones entre les quals hi havia professors d’Universitat, estudiants i agents d’algunes ONG. Està inscrita amb el número 23003 de la secció 1a del Registre d’Associacions de la Generalitat de Catalunya, a Barcelona. Des del gener 2020, AFRICAT és una ONG de desenvolupament inscrita al Registre de l’Agència Catalana de Cooperació al Desenvolupament amb el número 751.
+                </p>
+                
+            </div>
+
+
+            <!-- Columna de Imagen -->
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='imagen9.jpg') }}" class="img-fluid" alt="Imagen">
+                
+            </div>
+
+            <div class="col-md-6">
+                <img src="{{ url_for( 'static' , filename='logo1.png')}}" class="img-fluid" alt ="Imagen">
+                
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <div id="footer-wrapper">
+        <div class="footerarea">
+            <div class="container footer">
+                <div class="logo">
+                    <img src="{{ url_for('static', filename='logo1.png') }}" alt="Logo">
+                </div>
+                <div class="cols-3 widget-column-1">  
+                    <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sobre nosaltres</font></font></h5>             
+                    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" class="">Africat és una ONG que promou la cooperació i intercanvi cultural entre Àfrica i Catalunya</font></font></p>
+                </div><!--end .widget-column-1-->                  
+                <div class="cols-3 widget-column-2">  
+                    <!-- Aquí puede ir el contenido del segundo widget-column si es necesario -->
+                </div><!--end .widget-column-2-->
+                <div class="cols-3 widget-column-3">  
+                    <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacte</font></font></h5>              
+                    <div class="phone-no">	 
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Telèfon: +34 638 28 49 30</font></font></p>
+                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Email: </font></font>
+                        <a href="mailto:info@africat.cat"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">infoafricat@gmail.com</font></font></a>
+                    </div>
+                </div><!--end .widget-column-3-->
+                <div class="clear"></div>
+            </div><!--end .container--> 
+        </div>
+    </div>
+
+
+        
+
+    <script src="static/script.js"></script>
+        
+ 
+
+</body>
+</html>
+
